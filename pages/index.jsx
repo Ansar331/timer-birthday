@@ -40,11 +40,11 @@ export default function Home() {
 
   return (
     <div style={{ textAlign: 'center', padding: '20px' }}>
-      <h1>Countdown Timer</h1>
+      <h1>Обратный Отсчет До Дня Рождения Аиши!!!</h1>
       <div style={{ fontSize: '24px' }}>
-        <p>Time left until August 28:</p>
+        <p>Оставшееся время до 28 Августа:</p>
         <p>
-          {timeLeft.days} days, {timeLeft.hours} hours, {timeLeft.minutes} minutes, {timeLeft.seconds} seconds
+          {timeLeft.days} Дней, {timeLeft.hours} Часов, {timeLeft.minutes} Минут, {timeLeft.seconds} Секунд
         </p>
       </div>
       <style jsx>{`
