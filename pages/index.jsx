@@ -3,7 +3,7 @@ import Confetti from 'react-confetti';
 
 function calculateTimeLeft() {
   const currentDate = new Date();
-  const targetDate = new Date(currentDate.getFullYear(), 9, 13); 
+  const targetDate = new Date(currentDate.getFullYear(), 7, 28); 
   const timeDifference = targetDate - currentDate;
 
   if (timeDifference < 0) {
@@ -48,16 +48,16 @@ export default function Home() {
 
   return (
     <div style={{ textAlign: 'center', padding: '20px' }}>
-      <h1>Обратный Отсчет До Дня Рождения Катеньки!!!</h1>
+      <h1>Обратный Отсчет До Дня Рождения Аишы!!!</h1>
       <div style={{ fontSize: '24px' }}>
-        <p>Оставшееся время до 13 Октября:</p>
+        <p>Оставшееся время до 28 Августа:</p>
         <p>
           {timeLeft.days} Дней, {timeLeft.hours} Часов, {timeLeft.minutes} Минут, {timeLeft.seconds} Секунд
         </p>
       </div>
       {showConfetti && <Confetti />} {/* Отображайте конфетти, если showConfetti равно true */}
       <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-      {showConfetti && <h1>С Днем Рождения Катенька!!!&#128525;&#128536;&#129321;&#129392;&#128525;</h1>}
+      {showConfetti && <h1>С Днем Рождения Аиша!!!&#128525;&#128536;&#129321;&#129392;&#128525;</h1>}
       <style jsx>{`
         h1 {
           font-size: 36px;
