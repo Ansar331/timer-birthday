@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Confetti from 'react-confetti';
 
 function calculateTimeLeft() {
   const currentDate = new Date();
@@ -29,10 +30,17 @@ function calculateTimeLeft() {
 
 export default function Home() {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [showConfetti, setShowConfetti] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
+      const newTimeLeft = calculateTimeLeft();
+      setTimeLeft(newTimeLeft);
+
+      if (newTimeLeft.days === 0 && newTimeLeft.hours === 0 && newTimeLeft.minutes === 0 && newTimeLeft.seconds === 0) {
+        setShowConfetti(true);
+        clearInterval(timer);
+      }
     }, 1000);
 
     return () => clearInterval(timer);
@@ -47,6 +55,9 @@ export default function Home() {
           {timeLeft.days} Дней, {timeLeft.hours} Часов, {timeLeft.minutes} Минут, {timeLeft.seconds} Секунд
         </p>
       </div>
+      {showConfetti && <Confetti />} {/* Отображайте конфетти, если showConfetti равно true */}
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      {showConfetti && <h1>С Днем Рождения Аиша!!!&#128525;&#128536;&#129321;&#129392;&#128525;</h1>}
       <style jsx>{`
         h1 {
           font-size: 36px;
