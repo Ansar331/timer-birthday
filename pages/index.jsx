@@ -48,7 +48,7 @@ export default function Home() {
 
   return (
     <div style={{ textAlign: 'center', padding: '20px' }}>
-      <h1>Обратный Отсчет До Дня Рождения Аишы!!!</h1>
+      <h1>Обратный Отсчет До Дня Рождения Аиши!!!</h1>
       <div style={{ fontSize: '24px' }}>
         <p>Оставшееся время до 28 Августа:</p>
         <p>
