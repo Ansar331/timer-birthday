@@ -49,7 +49,7 @@ export default function Home() {
   return (
   <div style={{ textAlign: 'center', fontSize: '52px', textTransform: 'uppercase' }}>
     <br></br><br></br><br></br><br></br>
-    Сережа привет)
+    Сережа пидарас)
   </div>
 );
 
