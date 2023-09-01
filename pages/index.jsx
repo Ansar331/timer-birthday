@@ -47,8 +47,9 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
-      Сережа пидарас)
-    </div>
-  );
+  <div style={{ textAlign: 'center', fontSize: '24px', textTransform: 'uppercase' }}>
+    Сережа привет)
+  </div>
+);
+
 }
