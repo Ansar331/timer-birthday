@@ -3,7 +3,7 @@ import Confetti from 'react-confetti';
 
 function calculateTimeLeft() {
   const currentDate = new Date();
-  const targetDate = new Date(currentDate.getFullYear(), 7, 28); 
+  const targetDate = new Date(currentDate.getFullYear(), 1, 26); 
   const timeDifference = targetDate - currentDate;
 
   if (timeDifference < 0) {
@@ -49,7 +49,7 @@ export default function Home() {
   return (
   <div style={{ textAlign: 'center', fontSize: '52px', textTransform: 'uppercase' }}>
     <br></br><br></br><br></br><br></br>
-    Арман пидарас)
+    С днем рождения папа!
   </div>
 );
 
